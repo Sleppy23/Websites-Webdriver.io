@@ -9,8 +9,8 @@ const carrilDiamanteLogo = "#1337843161";
 const americasBestLogo = "#1371784515";
 const goldenEagleLawnCareLogo = "#1359157006";
 const pgiLogo = "#1276536885";
-// const jrConstructionLogo = "#1829253137";
-// const cruzControlWeldingLogo = "#1359157006";
+const jrConstructionLogo = "#1829253137";
+const cruzControlWeldingLogo = "#1359157006";
 
 describe("Verify Flores website loads", () => {
   it("should verify the website title", async () => {
@@ -54,12 +54,12 @@ describe("verify Carrril diamante website loads", () => {
 
 // This is a website that is not working, the url is not able to be found
 
-// describe("Verify that Americas Best website loads", () => {
-//   it("should load website home page", async () => {
-//     await broswer.url("http://www.americasbesthi.com/");
-//     expect(americasBestLogo).toBePresent();
-//   });
-// });
+describe("Verify that Americas Best website loads", () => {
+  it("should load website home page", async () => {
+    await broswer.url("http://www.americasbesthi.com/");
+    expect(americasBestLogo).toBePresent();
+  });
+});
 
 describe("Verify Golden Eagle Lawn Care website loads", () => {
   it("Should load websites home page", async () => {
@@ -77,18 +77,18 @@ describe("Verify PGI website loads", () => {
   });
 });
 
-// describe("Verify JR Construction website loads", () => {
-//   it("Should load home page", async () => {
-//     await browser.url("https://www.jrconstructionusa.com/");
-//     expect(jrConstructionLogo).toBePresent();
-//     await browser.url(2000);
-//   });
-// });
+describe("Verify JR Construction website loads", () => {
+  it("Should load home page", async () => {
+    await browser.url("https://www.jrconstructionusa.com/");
+    expect(jrConstructionLogo).toBePresent();
+    await browser.url(2000);
+  });
+});
 
-// describe("Verify that Cruz Control Welding website loads", () => {
-//   it("Should load website home page", async () => {
-//     await browser.url("https://www.cruzcontrolwelding.com/");
-//     expect(cruzControlWeldingLogo).toBePresent();
-//     await browser.url(2000);
-//   });
-// });
+describe("Verify that Cruz Control Welding website loads", () => {
+  it("Should load website home page", async () => {
+    await browser.url("https://www.cruzcontrolwelding.com/");
+    expect(cruzControlWeldingLogo).toBePresent();
+    await browser.url(2000);
+  });
+});
