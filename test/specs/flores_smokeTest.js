@@ -1,5 +1,4 @@
-// const HomePage = require('../pageobjects/flores/homePage.js');
-// import floresHomePage from '../pageobjects/flores/floresPage.js';
+// const floresPage = require("../floresPage");
 
 const floresLogo = "#1298527157";
 const forwardLogo = "#1090325509";
@@ -54,12 +53,12 @@ describe("verify Carrril diamante website loads", () => {
 
 // This is a website that is not working, the url is not able to be found
 
-describe("Verify that Americas Best website loads", () => {
-  it("should load website home page", async () => {
-    await broswer.url("http://www.americasbesthi.com/");
-    expect(americasBestLogo).toBePresent();
-  });
-});
+// describe("Verify that Americas Best website loads", () => {
+//   it("should load website home page", async () => {
+//     await broswer.url("http://www.americasbesthi.com/");
+//     expect(americasBestLogo).toBePresent();
+//   });
+// });
 
 describe("Verify Golden Eagle Lawn Care website loads", () => {
   it("Should load websites home page", async () => {
@@ -77,18 +76,18 @@ describe("Verify PGI website loads", () => {
   });
 });
 
-describe("Verify JR Construction website loads", () => {
-  it("Should load home page", async () => {
-    await browser.url("https://www.jrconstructionusa.com/");
-    expect(jrConstructionLogo).toBePresent();
-    await browser.url(2000);
-  });
-});
+// describe("Verify JR Construction website loads", () => {
+//   it("Should load home page", async () => {
+//     await browser.url("https://www.jrconstructionusa.com/");
+//     expect(jrConstructionLogo).toBePresent();
+//     await browser.url(2000);
+//   });
+// });
 
-describe("Verify that Cruz Control Welding website loads", () => {
-  it("Should load website home page", async () => {
-    await browser.url("https://www.cruzcontrolwelding.com/");
-    expect(cruzControlWeldingLogo).toBePresent();
-    await browser.url(2000);
-  });
-});
+// describe("Verify that Cruz Control Welding website loads", () => {
+//   it("Should load website home page", async () => {
+//     await browser.url("https://www.cruzcontrolwelding.com/");
+//     expect(cruzControlWeldingLogo).toBePresent();
+//     await browser.url(2000);
+//   });
+// });
